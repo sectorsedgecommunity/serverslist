@@ -1,11 +1,9 @@
-body { 
-    background-image:url("../ice-station.png");
-    background-repeat: no-repeat;
-    background-position: 100% 15%;
-    background-size: auto 100vw;
-    width: 100%;
+html { 
+    background-image:url("../ice-station-cropped.png");
+    background-position-x: 99%;
+    background-size: cover;
+    background-attachment: fixed;
     height: 100%;
-    margin: 0;
 }
 
 .spacer {
