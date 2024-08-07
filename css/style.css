@@ -1,3 +1,6 @@
+/**
+ *  Main site
+ */
 html { 
     background-image:url("../ice-station-cropped.png");
     background-position-x: 99%;
@@ -6,44 +9,57 @@ html {
     height: 100%;
 }
 
-.spacer {
-    height: 5px
+/**
+ *  Colors: Server list  
+ */
+html {
+    --server_list-header: #02020240;
+    --server_list-online-server: #02020225;
+    --server_list-offline_server: #630c0040;
+    --server_list-text: #FFFFFF;
 }
+
+
+/**
+ *  Server list  
+ */
 
 .server_list {
     margin: auto;
 }
-
 .server_list, th, td {
-    color: white;
+    color: var(--server_list-text);
     border-collapse: collapse;
     padding: 5px;
     font-family: 'Montserrat';
 }
 
+
+/**
+ *   Server list table
+ */
+.spacer {
+    height: 5px
+}
 th, td {
     padding: 5px;
     padding-left: 30px;
     padding-right: 30px;
-    background: #02020230;
+    background: var(--server_list-online-server);
 }
-
 th {
     text-align: left;
-    background: #02020240;
+    background: var(--server_list-header);
 }
-
 td {
     margin-top: 2px;
     margin-bottom: 2px;
 }
-
 td.spacer {
     background: transparent;
     margin-top: 2px;
     margin-bottom: 2px;
 }
-
 details {
     line-height: 220%
 }
