@@ -104,3 +104,8 @@ details:hover {
     transition-duration: 200ms;
     background-color: var(--server_list-online_server_hover)
 }
+
+
+.material-symbols-outlined {
+  font-size: 11px !important;
+}
