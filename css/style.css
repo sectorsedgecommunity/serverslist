@@ -15,7 +15,7 @@ html {
  */
 html {
     --server_list-background: #00000070;
-    --server_list-online_server_hover: #ffffff25;
+    --server_list-online_server_hover: #3a3a3a25;
     --server_list-online_server: #30303070;
     --server_list-offline_server: #630c0040;
     --server_list-text-header: #CCCCCC;
@@ -67,14 +67,23 @@ button:hover {
 table {
     outline: var(--server_list-background) solid 20px;
 }
-td {
+.server {
     transition-duration: 200ms;
     font-size: 12;
     font-weight: 500;
     padding: 5px;
     padding-left: 0px;
     padding-right: 20px;
+}
+.server[status="offline"] {
+    background-color: var(--server_list-offline_server);
+}
+.server[status="online"] {
     background-color: var(--server_list-online_server);
+}
+.server[status="online"]:hover {
+    transition-duration: 200ms;
+    background-color: var(--server_list-online_server_hover);
 }
 .item_region, .server_region, .item_name, .server_name {
     padding-left: 20px;
@@ -88,15 +97,11 @@ td {
 .server_map {
     padding-right: 100px;
 }
- .server_description {
+.server_description {
     padding-right: 20px;
 }
 .item_description {
     font-size: 12px;
-}
-tr#server:hover {
-    transition-duration: 200ms;
-    background-color: var(--server_list-online_server_hover);
 }
 th {
     color: var(--server_list-text-header);
