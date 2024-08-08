@@ -9,14 +9,19 @@ html {
     height: 100%;
 }
 
+
 /**
  *  Colors: Server list  
  */
 html {
-    --server_list-header: #02020240;
-    --server_list-online-server: #02020225;
+    --server_list-background: #00000070;
+    --server_list-online_server_hover: #ffffff25;
+    --server_list-online_server: #30303070;
     --server_list-offline_server: #630c0040;
-    --server_list-text: #FFFFFF;
+    --server_list-text-header: #CCCCCC;
+    --server_list-text: #f0f0f0;
+    --server_list-se_blue_light: #1af7ff;
+    --server_list-se_blue_dark: #14c5cc;
 }
 
 
@@ -26,11 +31,13 @@ html {
 
 .server_list {
     margin: auto;
+    margin-top: 30px;
+    padding: 30px
 }
-.server_list, th, td {
+.server_list, td {
     color: var(--server_list-text);
     border-collapse: collapse;
-    padding: 5px;
+    padding: 20px;
     font-family: 'Montserrat';
 }
 
@@ -39,26 +46,50 @@ html {
  *   Server list table
  */
 .spacer {
-    height: 5px
+    padding: 0px;
+    height: 4px;
+    background-color: var(--server_list-background);
 }
-th, td {
+button {
+    font-weight: 475;
+    font-family: 'Montserrat';
+    font-size: 12;
+    transition-duration: 400ms;
+    background-color: var(--server_list-se_blue_dark);
+    border-style: none;
+    padding: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+button:hover {
+    background-color: var(--server_list-se_blue_light);
+}
+table {
+    outline: var(--server_list-background) solid 20px;
+}
+td {
+    transition-duration: 200ms;
+    font-size: 12;
+    font-weight: 475;
     padding: 5px;
     padding-left: 30px;
     padding-right: 30px;
-    background: var(--server_list-online-server);
+    background-color: var(--server_list-online_server);
+}
+tr#server:hover {
+    transition-duration: 200ms;
+    background-color: var(--server_list-online_server_hover);
+}
+td.item_description {
+    font-size: 12px
 }
 th {
+    color: var(--server_list-text-header);
+    font-size: 12px;
+    font-weight: 600;
     text-align: left;
-    background: var(--server_list-header);
-}
-td {
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
-td.spacer {
-    background: transparent;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    background-color: var(--server_list-background);
+    padding-bottom: 11px;
 }
 details {
     line-height: 220%
