@@ -70,18 +70,33 @@ table {
 td {
     transition-duration: 200ms;
     font-size: 12;
-    font-weight: 475;
+    font-weight: 500;
     padding: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 0px;
+    padding-right: 20px;
     background-color: var(--server_list-online_server);
+}
+.item_region, .server_region, .item_name, .server_name {
+    padding-left: 20px;
+}
+.server_player_count {
+    padding-right: 50px;
+}
+.server_game_mode {
+    padding-right: 50px;
+}
+.server_map {
+    padding-right: 100px;
+}
+ .server_description {
+    padding-right: 20px;
+}
+.item_description {
+    font-size: 12px;
 }
 tr#server:hover {
     transition-duration: 200ms;
     background-color: var(--server_list-online_server_hover);
-}
-td.item_description {
-    font-size: 12px
 }
 th {
     color: var(--server_list-text-header);
@@ -92,5 +107,12 @@ th {
     padding-bottom: 11px;
 }
 details {
+    padding-left: 5px;
+    padding-right: 5px;
+    transition-duration: 200ms;
     line-height: 220%
+}
+details:hover {
+    transition-duration: 200ms;
+    background-color: var(--server_list-online_server_hover)
 }
