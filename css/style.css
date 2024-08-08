@@ -33,7 +33,7 @@ html {
     margin-top: 30px;
     color: var(--server_list-text); 
     border-collapse: collapse;
-    padding: 20px;
+    padding: 30px !important;
     font-family: 'Montserrat';
 }
 
@@ -67,11 +67,14 @@ table {
     transition-duration: 200ms;
     font-size: 14px;
     padding: 6px;
-    padding-left: 20px;
+    padding-left: 30px;
     font-weight: 500;
 }
-.item_player_count {
+.server_region, .server_name, .server_address, .server_game_mode, .server_map {
     padding-left: 30px !important;
+}
+.server_description {
+    padding-left: 29px !important;
 }
 .server[status="offline"] {
     background-color: var(--server_list-offline_server);
@@ -92,8 +95,7 @@ th {
     padding-bottom: 11px;
 }
 details {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 40px;
     font-size: 10px;
     transition-duration: 200ms;
     line-height: 175%
