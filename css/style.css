@@ -20,8 +20,6 @@ html {
     --server_list-offline_server: #630c0040;
     --server_list-text-header: #CCCCCC;
     --server_list-text: #f0f0f0;
-    --server_list-se_blue_light: #1af7ff;
-    --server_list-se_blue_dark: #14c5cc;
 }
 
 
@@ -31,11 +29,9 @@ html {
 
 .server_list {
     margin: auto;
+    font-size: 10;
     margin-top: 30px;
-    padding: 30px
-}
-.server_list, td {
-    color: var(--server_list-text);
+    color: var(--server_list-text); 
     border-collapse: collapse;
     padding: 20px;
     font-family: 'Montserrat';
@@ -53,27 +49,29 @@ html {
 button {
     font-weight: 475;
     font-family: 'Montserrat';
-    font-size: 12;
+    font-size: 12px; 
     transition-duration: 400ms;
-    background-color: var(--server_list-se_blue_dark);
+    background-color: #14c5cc;
     border-style: none;
-    padding: 20px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding: 17px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 button:hover {
-    background-color: var(--server_list-se_blue_light);
+    background-color: #1af7ff;
 }
 table {
     outline: var(--server_list-background) solid 20px;
 }
-.server {
+.server, td {
     transition-duration: 200ms;
-    font-size: 12;
+    font-size: 14px;
+    padding: 4px;
+    padding-left: 20px;
     font-weight: 500;
-    padding: 5px;
-    padding-left: 0px;
-    padding-right: 20px;
+}
+.item_player_count {
+    padding-left: 30px !important;
 }
 .server[status="offline"] {
     background-color: var(--server_list-offline_server);
@@ -85,24 +83,6 @@ table {
     transition-duration: 200ms;
     background-color: var(--server_list-online_server_hover);
 }
-.item_region, .server_region, .item_name, .server_name {
-    padding-left: 20px;
-}
-.server_player_count {
-    padding-right: 50px;
-}
-.server_game_mode {
-    padding-right: 50px;
-}
-.server_map {
-    padding-right: 100px;
-}
-.server_description {
-    padding-right: 20px;
-}
-.item_description {
-    font-size: 12px;
-}
 th {
     color: var(--server_list-text-header);
     font-size: 12px;
@@ -112,8 +92,9 @@ th {
     padding-bottom: 11px;
 }
 details {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 10px;
     transition-duration: 200ms;
     line-height: 175%
 }
