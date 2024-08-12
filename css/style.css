@@ -1,17 +1,76 @@
 /**
- *  Main site
+    Main site
  */
-html { 
+html {
     background-image:url("../ice-station-cropped.png");
     background-position-x: 99%;
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
 }
+body {
+    margin: 0px
+}
+
+/*
+    Nav
+*/
+.nav {
+    margin-top: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: #00000070;
+    border-bottom-color: #4c5250;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+.nav_logo {
+    width: 150px;
+    padding: 7px
+}
+.homepage {
+    padding: 0px;
+    margin-left: 90px;
+    position: absolute;
+    width: 42px;
+    transition-duration: 400ms;
+    color: #FFF;
+
+    font-size: 10pt;
+    font-family: 'Montserrat', sans-serif;
+
+    background: none;
+    border: 0px;
+}
+.serverlist {
+    border-bottom-style: solid !important;
+    border-bottom-color: #FFF !important;
+    border-bottom-width: 2px !important;
+    margin-left: 90px !important;
+    padding: 0px;
+    position: absolute;
+    width: 71px;
+    transition-duration: 400ms;
+    color: #FFF;
+
+    font-size: 10pt;
+    font-family: 'Montserrat', sans-serif;
+    background: none;
+    border: 0px;
+}
+#nav_button {
+    margin: 10px;
+    background: none;
+    border: none;
+}
+#nav_button:hover {
+    transition-duration: 400ms;
+    color: #EEE;
+}
 
 
-/**
- *  Colors: Server list  
+/*
+    Colors: Server list  
  */
 html {
     --server_list-background: #00000070;
@@ -23,14 +82,14 @@ html {
 }
 
 
-/**
- *  Server list  
+/*
+    Server list  
  */
 
 .server_list {
     margin: auto;
     font-size: 10;
-    margin-top: 30px;
+    margin-top: 40px;
     color: var(--server_list-text); 
     border-collapse: collapse;
     padding: 30px !important;
@@ -38,8 +97,8 @@ html {
 }
 
 
-/**
- *   Server list table
+/*
+   Server list table
  */
 .spacer {
     padding: 0px;
