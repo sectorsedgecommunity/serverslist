@@ -1,8 +1,8 @@
-/**
+/*
     Main site
  */
 html {
-    background-image:url("ice-station-cropped.png");
+    background-image:url("cr.png");
     background-position-x: 99%;
     background-size: cover;
     background-attachment: fixed;
@@ -16,25 +16,21 @@ body {
     Nav
 */
 .nav {
-    font-size: 12px;
+    font-size: 0.75em;
     display: flex;
     margin-top: 0px;
     width: 100%;
-    height: 40px;
+    height: 42px;
     background-color: #00000070;
-    border-bottom-color: #4c5250;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
 }
 
 .nav_logo {
     padding: 7px
 }
 .nav > a {
-    font-size: 12px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 475;
-    margin-top: 12px !important;
+    margin-top: 13.5px !important;
     margin-bottom: 10px !important;
     border-width: 2px !important;
     text-decoration: none;
@@ -56,6 +52,17 @@ body {
 
     background: none;
     border: 0px;
+}
+.ingame_notice {
+    margin-top: 20px !important;
+    text-align: center;
+    width: 880px;
+    padding: 10px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 475;
+    font-size: 0.8em;
+    background-color: #ffcc00;
 }
 .serverlist {
     border-bottom-style: solid !important;
